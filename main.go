@@ -2,11 +2,13 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/NattapatN/maze-generator/mazegenerator"
 )
 
 func main() {
 	fmt.Println("== Maze Generator ==")
 
-	Initial(40, 30)
-	PrintMaze()
+	mazegenerator.Initial(40, 30)
+	mazegenerator.PrintMaze()
 }

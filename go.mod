@@ -1,3 +1,3 @@
-module github.com/NattapatN/mazeGenerator
+module github.com/NattapatN/maze-generator
 
 go 1.19
