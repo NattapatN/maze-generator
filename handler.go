@@ -26,6 +26,10 @@ func Initial(width, hieght int) {
 	mazeGenerator(0, 0)
 }
 
+func GetMaze() [][][4]int {
+	return Maze
+}
+
 func mazeGenerator(startX, startY int) {
 	currentPostion := [2]int{startX, startY}
 	path = append(path, currentPostion)
@@ -100,7 +104,7 @@ func removeWall(currentLocation, nextLocation [2]int) {
 	}
 }
 
-func printMaze() {
+func PrintMaze() {
 	time.Sleep(time.Second / 10)
 	for i := 0; i < blockX; i++ {
 		if i == 0 {
