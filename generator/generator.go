@@ -31,6 +31,7 @@ func GetMaze() [][][4]int {
 }
 
 func mazeGenerator(startX, startY int) {
+	rand.Seed(time.Now().UnixNano())
 	currentPostion := [2]int{startX, startY}
 	path = append(path, currentPostion)
 	Maze[0][0][wall["up"]] = 0
