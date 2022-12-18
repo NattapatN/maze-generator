@@ -1,4 +1,4 @@
-package mazegenerator
+package generator
 
 import (
 	"fmt"
